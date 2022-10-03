@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=1280 height=720></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,15 +56,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/v0.4.loader.js";
+      var loaderUrl = buildUrl + "/v0.13.loader.js";
       var config = {
-        dataUrl: buildUrl + "/v0.4.data",
-        frameworkUrl: buildUrl + "/v0.4.framework.js",
-        codeUrl: buildUrl + "/v0.4.wasm",
+        dataUrl: buildUrl + "/v0.13.data",
+        frameworkUrl: buildUrl + "/v0.13.framework.js",
+        codeUrl: buildUrl + "/v0.13.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "Warobi",
         productName: "Shooter - Game Disease",
-        productVersion: "1.0",
+        productVersion: "0.10",
         showBanner: unityShowBanner,
       };
 
@@ -95,8 +95,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1280px";
+        canvas.style.height = "720px";
       }
 
       loadingBar.style.display = "block";
